@@ -1,0 +1,35 @@
+html,body{
+	width: 100%;
+	height: 105%;
+}
+p{
+	text-align : justify;
+}
+#fix-image{
+	margin-top: 60px;
+}
+.menu-fijo{
+	position: fixed;
+	top: 0;
+	width: 900px;
+	z-index: 1020;
+}
+#menu-active principal{
+	background-color: black;
+}
+.slide-main{
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+#slide2{
+	
+}
+#slide3{
+	background-color: lightgrey;
+}
+#slide4{
+	background-color: yellow;
+}
