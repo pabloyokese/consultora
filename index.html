@@ -9,52 +9,9 @@
 
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<style type="text/css">
-			body {
-			padding-top: 20px;
-			padding-bottom: 60px;
-			}
 
-			/* Custom container */
-			.container {
-			margin: 0 auto;
-			max-width:1200px;
-			}
-			.container > hr {
-			margin: 30px 0;
-			}
-
-			/* Customize the navbar links to be fill the entire space of the .navbar */
-			.navbar .navbar-inner {
-			padding: 0;
-			}
-			.navbar .nav {
-			margin: 0;
-			display: table;
-			width: 100%;
-			}
-			.navbar .nav li {
-			display: table-cell;
-			width: 1%;
-			float: none;
-			}
-			.navbar .nav li a {
-			font-weight: bold;
-			text-align: center;
-			border-left: 1px solid rgba(255,255,255,.75);
-			border-right: 1px solid rgba(0,0,0,.1);
-			}
-			.navbar .nav li:first-child a {
-			border-left: 0;
-			border-radius: 3px 0 0 3px;
-			}
-			.navbar .nav li:last-child a {
-			border-right: 0;
-			border-radius: 0 3px 3px 0;
-			}
-		</style>
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+		<link rel="stylesheet" href="css/font-awesome.css">
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
@@ -75,24 +32,30 @@
 
 	<body>
 
-		<div class="container slide-main" id="slide1" data-slide="1">
+		<div class="container slide-main" id="slide1">
 
-			<div class="masthead">
-				<h3 class="muted">Consultora S&L</h3>
-				<div class="navbar" >
-					<div class="navbar-inner">
-						<div class="container" id="contenedor-menu-principal">
-							<ul class="nav" id="menu-principal">
-								<li class="active" data-slide="1"><a href="#" >INICIO</a></li>
-								<li data-slide="2"><a href="#" >QUIENES SOMOS</a></li>
-								<li data-slide="3"><a href="#" >SERVICIOS</a></li>
-								<li data-slide="3"><a href="#" >PORTAFOLIO</a></li>
-								<li data-slide="4"><a href="#" >CONTACTO</a></li>
-							</ul>
-						</div>
-					</div>
-				</div><!-- /.navbar -->
+			<div class="container text-center">
+				<h3 class="text-center">Consultora S&L</h3>
+				<ul class="navigation">
+					<li>
+						<a href="index.html"> <h2><i class=" icon-home icon-large"></i> Inicio</h2>
+						<p>Bienvenidos a JL Design</p></a>
+					</li>
+					<li>
+						<a href="quieres-somos.html"> <h2><i class=" icon-group icon-large"></i>Acerca</h2>
+						<p>¿Quienes Somos?</p></a>
+					</li>
+					<li>
+						<a href="servicios.html"> <h2><i class=" icon-sitemap icon-large"></i>Servicios</h2>
+						<p>Servicios que Ofrecemos</p></a>
+					</li>
+					<li>
+						<a href="contacto.html"> <h2><i class=" icon-comments icon-large"></i>Contactanos</h2>
+						<p>Hablemos de Negocios</p></a>
+					</li>
+				</ul>
 			</div>
+			<hr>
 			
 			<div id="myCarousel" class="carousel slide">
 				<ol class="carousel-indicators">
@@ -125,475 +88,20 @@
 			<hr>
 		
 			<div class="footer">
-				<p>&copy; Consultora S&L 2013</p>
+				<div class="container-fluid">
+					<p class="text-center">Contacta con nostros en las redes Sociales.</p>
+					<div class="row-fluid">
+						<div class="span4">1</div>
+						<div class="span4">2</div>
+						<div class="span4">3</div>
+					</div>
+					
+				</div>
+				<p class="text-center">&copy; Consultora S&L 2013</p>
 			</div>
 
 		</div> <!-- /container -->
 
-		<div class="container slide-main" id="slide2" data-slide="2">
-			<div class="tabbable" style="margin-top:50px;"> <!-- Only required for left/right tabs -->
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab1" data-toggle="tab">Quienes Somos</a></li>
-					<li><a href="#tab2" data-toggle="tab">Valores</a></li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="tab1">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span4 text-center">
-									<img src="http://lorempixel.com/200/200/" class="img-rounded" >
-								</div>
-								<div class="span8">
-									<h2>Quienes Somos?</h2>
-									<p>
-										Somos un Equipo Multidisciplinario de profesionales experimentados, contamos con un conocimiento amplio de soluciones, desarrolladas en un ambiente de productividad y competitividad enmarcado en el uso de nuevas tecnologías y metodologías para la planeación estratégica y operativa; desarrollo, capacitación e implementación de Planes, Programas y Proyectos.
-										Nos caracterizamos por trabajar de la mano de nuestros clientes con criterios de eficacia, eficiencia y efectividad.
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span8">
-									<h2>Misión</h2>
-									<p class="text-justify">
-										Optimizar procesos, procedimientos y estructura organizativa de nuestros clientes con altos estándares de calidad, a través del mejoramiento de los ya implementados o creando nuevos modelo de servicios corporativos que permitan una mayor eficiencia.
-									</p>
-									<h2>Visión</h2>
-									<p >
-										Ser una de las consultoras más importantes y reconocidas a nivel del sur del país identificados por nuestra responsabilidad y compromiso con los resultados; contando con los mejores estándares de  calidad  en  el  mercado,  apoyando de esta manera,  a  que nuestros  clientes  sean  más  rentables,  eficientes  y competitivos,  gracias  a  la automatización  de  sus  procesos,  agilización  de  sus operaciones e integración de su información permitiéndoles de esta manera analizar  y  tomar  decisiones  rápidas  e inteligentes.
-									</p>
-								</div>
-								<div class="span4 text-center" id="fix-image">
-									<img src="http://lorempixel.com/200/200/" class="img-rounded" >
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="tab2">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span3">
-									imagen
-								</div>
-								<div class="span9">
-									<h4>COMPROMISO</h4>
-									<p>Tenemos  firmeza y voluntad inquebrantables para cumplir con los clientes, que nos han brindado su confianza, hacemos nuestros sus problemas, y trabajamos conjuntamente con ellos en la identificación e implementación de las soluciones.
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									imagen
-								</div>
-								<div class="span9">
-									<h4>HONESTIDAD</h4>
-									<p>Porque el cliente es nuestro activo más valioso. Los servicios que prestamos siempre están enmarcados en el precio justo, personal idóneo y soluciones aplicables.
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									imagen
-								</div>
-								<div class="span9">
-									<h4>CONFIDENCIALIDAD</h4>
-									<p>Proporcionamos absoluta discreción en el manejo de la información de su empresa, garantizando que la misma solo será del conocimiento del personal autorizado.
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									imagen
-								</div>
-								<div class="span9">
-									<h4>ETICA</h4>
-									<p>Nos exigimos  una actuación coherente con los valores establecidos sin olvidar la referencia al bien común, nos identificamos por un proceder digno, determinado por nuestras convicciones y demostrado  por la rectitud de nuestros actos. 
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									imagen
-								</div>
-								<div class="span9">
-									<h4>ORIENTACION AL CLIENTE</h4>
-									<p>Mantenemos actualización permanente y adecuamos nuestros servicios de acuerdo a las necesidades de  los clientes, con el fin de lograr su satisfacción.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container slide-main" id="slide3" data-slide="3">
-			<div class="tabbable tabs-left" style="margin-top:50px;">
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab3" data-toggle="tab" class="text-center">GESTIÓN <br>PÚBLICA<br> &nbsp; </a></li>
-					<li><a href="#tab4" data-toggle="tab" class="text-center">GESTIÓN<br> EMPRESARIAL <br> EFECTIVA</a></li>
-					<li><a href="#tab5" data-toggle="tab" class="text-center">ASESORAMIENTO <br>TRIBUTARIO<br> &nbsp; </a></li>
-					<li><a href="#tab6" data-toggle="tab" class="text-center">ASESORAMIENTO <br>JURÍDICO<br> &nbsp; </a></li>
-					<li><a href="#tab7" data-toggle="tab" class="text-center">TECNOLOGIA <br>EN DESARROLLO <br>DE SOFTWARE </a></li>
-					<li><a href="#tab8" data-toggle="tab" class="text-center">CONSULTORIA EN <br>REDES Y TECNOLOGIAS <br>DE INFORMACION </a></li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="tab3">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<h3>Gestion Publica</h3>
-									<p>
-									Ante los constantes cambios que se dan en la estructura del nuevo Estado Plurinacional de Bolivia S&T consultores S.R.L. pone a disposición de sus clientes profesionales con conocimientos sólidos, actuales y acordes a las nuevas realidades de cada entidad pública.
-									Profesionales en Administración Pública altamente especializados, de tal forma que sean capaces de prestar sus servicios es estricto apego a las normas legales, principios y procedimientos existentes dentro del ámbito de la administración pública.
-									</p>
-									<div class="accordion" id="accordion2">
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-													Asesoramiento en la administración de la gestión publica
-													</a>
-												</div>
-												<div id="collapseOne" class="accordion-body collapse">
-													<div class="accordion-inner">
-														Las son equipos de personas trabajando con un fin común, y el éxito o fracaso de la compañía depende en gran medida del talento del equipo. Es por esto que para cada nueva contratación, resulta indispensable asegurarnos que tenga todas las herramientas y conocimientos necesarios para desempeñar correctamente su labor. 
-
-														La capacitación es una actividad sistemática, planificada y permanente cuyo propósito general es preparar, desarrollar e integrar a los recursos humanos al proceso productivo, mediante la entrega de conocimientos, desarrollo de habilidades y actitudes necesarias para el mejor desempeño de todos los trabajadores en sus actuales y futuros cargos y adaptarlos a las exigencias cambiantes del entorno.
-														<ul>
-															<li>SINCON - Sistema Integrado de Contabilidad</li>
-															<li>Cierre de Gestión Presupuestario Contable</li>
-															<li>SFPM - Sistema de Formulación Presupuestaria Municipal</li>
-															<li>Elaboración del POA - Programa Operativo Anual</li>
-															<li>SIGMA - Sistema Integrado de Gestión y Modernización Administrativa </li>
-															<li>LEY Nº 1178 De Administración y Control Gubernamentales (LEY SAFCO) </li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-													Servicios de consultoría en la gestión publica
-													</a>
-												</div>
-												<div id="collapseTwo" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>asesorarlo en la identificación, entendimiento y administración de riesgo en su organización. Asesoramos a nuestros clientes a elaborar programas de Gobierno Corporativo, de Gestión de Riesgos y de Cumplimiento Regulatorio, controlando, midiendo y monitoreando el ambiente de control interno de las empresas y sus prácticas de gobierno corporativo. Ayudamos a establecer una cultura de “Hacer las cosas correctamente”.
-													</p>
-													<ul>
-														<li>Revaluó técnico contable de activos fijos</li>
-														<li>Procedimientos de inventariarían de activos fijos</li>
-														<li>Elaboración de reglamentos específicos y manuales de procedimiento de los sistemas de Administración</li>
-														<li>Apoyo y/o Elaboración de Estado Financieros de entidad publicas</li>
-													</ul>
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="tab-pane" id="tab4">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<h3>GESTIÓN EMPRESARIAL EFECTIVA</h3>
-									<p>
-									Desarrollamos programas que dan respuesta a los retos empresariales de la actualidad, potenciando el desarrollo de las habilidades directivas y de gestión necesarias para liderar empresas e instituciones. Con este fin les mostramos las herramientas y prácticas necesarias para gestionar proyectos complejos, profundizando  las claves de la innovación como motor empresarial. Entre nuestros servicios de gestión empresarial, ofrecemos los siguientes.
-									</p>
-									<h4>Planificación estratégica </h4>
-									<p>Brindamos herramientas, que permite a las organizaciones prepararse para enfrentar las situaciones que se presentan en el futuro, ayudando con ello a orientar sus esfuerzos hacia metas realistas de desempeño, por lo cual es necesario conocer y aplicar los elementos que intervienen en el proceso de Planificación Estratégica. </p>
-									<h4>Estudios e investigaciones de mercado </h4>
-									<p>Procuramos que la  investigación nos dé resultados,  precisos  y  objetivos,  a través de   la aplicación de  métodos  científicos;  ordenados  y  racionales, que le ayudaran a comprender  la situación y las necesidades del mercado, para poder enfocar las acciones que correspondan y lograr con ello mayores probabilidades  de éxito</p>
-									<h4>Optimización de la estructura organizacional </h4>
-									<p>Trabajamos de la mano con su entidad con el fin de lograr la  coordinación de los elementos a organizar, formando un modelo para la división de funciones, distribución de puestos, y la orden de los distintos niveles de toma de decisiones. Asistimos todo, lo relativo a relaciones, actividades, derechos y obligaciones que es preciso fijar mediante reglas y ordenanzas.</p>
-									<h4>Optimización de procesos de negocio</h4>
-									<p>Definimos destreza Empresarial, mediante políticas, procedimientos, programas y reglas que se construyen, permitiendo una transformación continua para conseguir beneficios y respuestas eficaces, S&T Consultores, hace que esto sea posible cimentando mecanismos que se centran en el rendimiento, para lo que la agilidad no es solo lo que se hace sino lo que se llega a ser.</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="tab-pane" id="tab5">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<h4>ASESORAMIENTO TRIBUTARIO</h4>
-									<p>
-									Acompañamos a nuestros clientes en la administración tributaria eficiente, Disponemos de un conocimiento amplio de las figuras impositivas que integran el sistema tributario, así como de los principales procedimientos de liquidación que resultan aplicables en la imposición personal o empresarial. Le brindamos asesoramiento sobre la satisfacción de forma óptima de sus obligaciones, con la entidad recaudadora y la manera de cumplir con los impuestos oportunos desde la práctica del ahorro impositivo.
-									</p>
-									<div class="accordion" id="accordion3">
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne0">
-													Asesoramiento tributario empresarial
-													</a>
-												</div>
-												<div id="collapseOne0" class="accordion-body collapse">
-													<div class="accordion-inner">
-														S&T Consultores cuenta con un equipo interdisciplinario, integrado por contadores públicos, administradores, economistas y abogados especializados en materia tributaria que permite brindar a nuestros clientes un servicio de alta calidad. El objetivo del asesoramiento tributario persigue lo siguiente:
-														<ul>
-															<li>Cumplimiento de las normas impositivas vigentes, que resulten aplicables a la actividad desarrollada por el cliente.</li>
-															<li>Consultorías impositivas de carácter especial </li>
-															<li>Declaraciones y pagos</li>
-															<li>Control de Obligaciones</li>
-															<li>Nuevos Esquemas de pagos electrónicos</li>
-															<li>Establecer un flujo de comunicación que permita mantener actualizado al personal de la empresa en los diversos aspectos tributarios.</li>
-
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo1">
-													Capacitación en materia tributaria
-													</a>
-												</div>
-												<div id="collapseTwo1" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>La capacitación en materia tributaria tiene como objetivo desarrollar las destrezas y aptitudes técnicas del personal de nuestros clientes, fortalecimiento de los conocimientos en materia tributaria y previsional a través de programas de capacitación elaborados a la medida y enfocados a las necesidades específicas de cada cliente. Tiene las siguientes características 
-													</p>
-													<ul>
-														<li>Contenido técnico elaborado acorde a las necesidades de cada cliente en función a los objetivos de capacitación que persigue.</li>
-														<li>Contenido que desarrolle el sentido de responsabilidad hacia la empresa</li>
-														<li>Sesiones interactivas que permitan mayor posibilidad de interacción entre los participantes y los instructores de S&T consultores </li>
-														<li>Temas de aplicación práctica elaborados en función a las actividades y operaciones que desarrolla el cliente, considerando las características del negocio.</li>
-														<li>Resolución de casos en aula y en equipos, permitiendo de esta manera una comprensión completa de las soluciones propuestas y fomentando la interacción positiva entre los propios participantes.</li>
-													</ul>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo2">
-													Servicios en materia tributaria
-													</a>
-												</div>
-												<div id="collapseTwo2" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>S&T consultores pone a su disposición profesionales especialistas en impuestos que maximizarán las fortalezas de su empresa, ofreciendo soluciones de cumplimiento tributario a la medida de su organización. Ayudamos a optimizar su estrategia empresarial impositiva, poniendo en práctica los siguientes servicios tributarios:
-													</p>
-													<ul>
-														<li>Preparación de declaraciones juradas mensuales
-															<ul>
-																<li>Impuesto al valor agregado</li>
-																<li>Régimen complementario al IVA</li>
-																<li>Impuesto a las transacciones</li>
-																<li>Retenciones locales</li>
-																<li>Retenciones a beneficiarios del exterior</li>
-																<li>Cumplimiento  de  deberes  formales  relacionados  con: el deber  de información  (Software Da-vinci), registros, facturas, medios de control fiscal, etc.</li>
-																<li>Impuesto sobre las utilidades de las empresas</li>
-																<li>Impuestos al consumo</li>
-																<li>Preparación de planillas tributarias y apoyo en la administración de asuntos salariales de trabajadores expatriados.</li>
-																<li>Preparación de solicitudes de devolución de impuestos.</li>
-															</ul>
-														</li>
-														<li>Preparación y/o asesoramiento en la elaboración de la Información Tributaria Complementaria (ITC).</li>
-														<li>Preparación y/o Revisión de la declaración jurada del Impuesto sobre las Utilidades de las Empresas (IUE)</li>
-														<li>Cumplimiento de deberes formales relacionados con el Software Facilito Formulario 605 V4 Preparación de Estados Financieros  en cumplimiento de la resolución normativa de directorio N° 10-0012-13</li>
-													</ul>
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="tab-pane" id="tab6">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<h3>ASESORAMIENTO JURÍDICO</h3>
-									<ul>
-										<li>Creación, transformación, disolución, de sociedades.</li>
-										<li>Asesoramiento en negociaciones extrajudiciales.</li>
-										<li>Asesoramiento Laboral, Seguridad Social, Regulaciones de Empleo, contractual Laboral y Recursos Humanos.</li>
-										<li>Delitos societarios, fiscales, contra los derechos de los trabajadores</li>
-										<li>Actualización en normas laborales</li>
-										<li>Elaboración de cartas orgánicas</li>
-										<li>Elaboración de Reglamentos</li>
-										<li>Elaboración de Estatutos</li>
-										<li>Elaboración de contratos modelo en diferentes tipos</li>
-										<li>Seminarios de Actualización Jurídica</li>
-										<li>Asesoría Legal</li>
-										<li>Elaboración de convenios: marco, específicos, de fortalecimiento</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="tab7">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<h4>TECNOLOGIA EN DESARROLLO DE SOFTWARE </h4>
-									<p>
-									Ofrecemos a nuestros clientes, desarrollo de software corporativo utilizando las más modernas tecnologías existentes en el mercado. Como empresa de desarrollo contamos con el equipo técnico necesario para implementar de manera eficaz la lógica empresarial. Nuestro equipo de desarrollo,  implementa soluciones completas orientadas a resultados y junto al cliente planteamos y definimos los objetivos a lograr. Aportamos un importante valor agregado a nuestros clientes con la implementación de las técnicas más modernas de desarrollo.
-									</p>
-									<h4>SOFTWARE A MEDIDA </h4>
-									<p>
-									Trabajamos con las más modernas tecnologías para el desarrollo de software a medida, teniendo a disposición del cliente, un equipo de profesionales que están especializados en los principales lenguajes utilizados en la actualidad (PHP,  .NET, AJAX), sobre las principales bases de datos (Oracle, SQL Server, Postgre SQL y MySQL) y los servidores que se utilizan masivamente en el momento (Apache, IIS, TOMCAT, JBOSS, OAS).
-									Entre nuestros principales productos, presentamos las siguientes, que son consideradas como las primeras opciones con que las empresas procuran marcar presencia.
-									</p>
-									<div class="accordion" id="accordion4">
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseOne3">
-													1.	Gestión de Activos Empresariales
-													</a>
-												</div>
-												<div id="collapseOne3" class="accordion-body collapse">
-													<div class="accordion-inner">
-														
-													1.	Gestión de Activos Empresariales: Es una solución que comprende tecnología y procesos en una serie de módulos integrados, permitiendo a las organizaciones alcanzar una mejora radical en la Administración de sus Activos Empresariales, garantizando la disponibilidad, fiabilidad y seguridad de la información, reduciendo los costos de mantenimiento, proveyendo un enfoque metodológico estructurado, brindando soluciones indicadas para reactivar la producción de una compañía y optimizar el circuito productivo.
-
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo4">
-													2.	Gestión y Optimización de Inventarios: 
-													</a>
-												</div>
-												<div id="collapseTwo4" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>Brinda soluciones resolviendo necesidades específicas en la optimización, Organización, visibilidad,  confiabilidad en la gestión de  inventario, reduciendo el inventario excesivo, facilitando la distribución de recursos a las áreas determinadas.
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo5">
-													3.	Gestión de afiliación y fichaje para hospitales: 
-													</a>
-												</div>
-												<div id="collapseTwo5" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>En el ámbito de la administración hospitalaria, ofrecemos, software capaz de transformar, radicalmente, la práctica cotidiana de la salud con resultados inmediatos y evidentes, no sólo en la atención al paciente sino en reducción de costos, eficiencia de los procesos y optimización del personal.
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo6">
-													4.	Sistema de Gestión y control de RRHH: 
-													</a>
-												</div>
-												<div id="collapseTwo6" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>Con el objeto  de alcanzar un desempeño cada día más eficaz y eficiente en los puestos de trabajo, La implementación del software de RRHH permite, Facilitar el registro, la actualización y la consulta del legajo del personal, generar información con una perspectiva global, incluyendo resúmenes de cargos por sectores, por fuente de financiamiento, por tipo de puestos, facilitar y apoyar la realización de los controles administrativos tendientes a fortalecer la gestión, apoyando los procesos de autoevaluación institucional a través de la emisión de reportes estadísticos y otros informes. 
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo7">
-													5.	Gestión Académico para colegios:  
-													</a>
-												</div>
-												<div id="collapseTwo7" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>sistema capaz de mejorar y optimizar los procesos de gestión  académica de los centros educativos, y que permite a los padres acceder a la información para su seguimiento diario, facilitando como aplicación de gestión académica, la introducción y administración de toda la información generada, permitiendo a los distintos perfiles de usuario, rentabilizar al máximo la gestión de dicha información.
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo8">
-													6.	Desarrollo de Páginas Web:  
-													</a>
-												</div>
-												<div id="collapseTwo8" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>Nos preocupamos de cuidar y posicionar su identidad corporativa  en la web, desarrollando proyectos en el sector privado y público no solo de alto impacto visual, sino de funcionalidad, donde el posicionamiento de estos va de la mano con las nuevas tendencias de marketing, diseño y programación.
-													</p>
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="tab8">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span12">
-									<div class="accordion" id="accordion5">
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseOne9">
-													1.	DISEÑO E IMPLEMENTACIÓN DE REDES
-													</a>
-												</div>
-												<div id="collapseOne9" class="accordion-body collapse">
-													<div class="accordion-inner">
-													Sobre diseño e instalación de Redes, S&T Consultores, ofrece soluciones a la medida de la necesidad del Cliente, cuyo diseño dependerá del tipo de negocio y de la especificación de transporte requerida para su correcta conectividad y funcionamiento.
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo10">
-													2.	SEGURIDAD INFORMATICA 
-													</a>
-												</div>
-												<div id="collapseTwo10" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>Porque la  información es uno de los principales activos de las organizaciones, poniendo en peligro su continuidad en caso de pérdida de la confidencialidad, integridad o disponibilidad de la misma. S&T Consultores cuenta con las herramientas tecnológicas y de gestión necesarios para la protección adecuada y una correcta gestión de seguridad informática en la empresa.
-													Los servicios de Consultoría en Seguridad llevados a cabo por S&T Consultores, abarcan todos los ámbitos de su organización
-
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo11">
-													3.	CONSULTORÍA EN INFRAESTRUCTURAS DE SEGURIDAD
-													</a>
-												</div>
-												<div id="collapseTwo11" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>Diseño de redes corporativas seguras, valoración independiente de fabricante respecto a la infraestructura de seguridad más adecuada, instalación y/o configuración de los distintos elementos de la infraestructura de seguridad, estudios de mejora de redes corporativas respecto a parámetros de confidencialidad, integridad y disponibilidad de la información.
-													</p>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-group">
-												<div class="accordion-heading">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo12">
-													4.	SOPORTE TÉCNICO DE REDES
-													</a>
-												</div>
-												<div id="collapseTwo12" class="accordion-body collapse">
-													<div class="accordion-inner">
-													<p>El Análisis y Monitoreo de las redes empresariales y la necesidad de actualización y reconfiguración de equipos, pruebas de evaluación y desempeño, conectividad, soporte correctivo y preventivo responden a los avances tecnológicos permanentes, S&T Consultores, contempla estos aspectos ofreciendo una cantidad de variantes que cubren un completo asesoramiento profesional para brindar soporte técnico, de mantenimiento y configuración de equipos de computación o sus componentes y dispositivos de red sobre la base de mantener la excelencia en cuanto su correcto funcionamiento, performance y prestaciones. 
-													</p>
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container slide-main" id="slide4" data-slide="4">
-			Contacto
-		</div>
 
     <!-- Le javascript
     ================================================== -->

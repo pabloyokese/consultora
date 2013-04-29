@@ -1,35 +1,223 @@
-html,body{
-	width: 100%;
-	height: 105%;
+@font-face {
+font-family: Trebuchet MS;
+src: url(font/trebuc.ttf) format("opentype");
 }
+body {
+font-family: 'Trebuchet MS';
+padding-top: 20px;
+padding-bottom: 60px;
+background-image: url('../img/fondo.jpg');
+background-position: fixed;
+}
+
+/* Custom container */
+.container {
+margin: 0 auto;
+max-width:1000px;
+}
+.container > hr {
+margin: 30px 0;
+}
+
 p{
 	text-align : justify;
 }
+
 #fix-image{
 	margin-top: 60px;
 }
 .menu-fijo{
 	position: fixed;
-	top: 0;
-	width: 900px;
+	top: 100;
+	width: 150px;
 	z-index: 1020;
 }
+.menu-fijo-desplazado{
+	position: fixed;
+	top: 0;
+	width: 150px;
+	z-index: 1020;
+}
+
 #menu-active principal{
 	background-color: black;
 }
 .slide-main{
-	background-attachment: fixed;
+
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 72%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(72%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 72%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 72%,rgba(229,229,229,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 72%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 72%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	width: 100%;
-	height: 100%;
 	position: relative;
-	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 20px rgba(58, 51, 21, 0.75);
+-moz-box-shadow:    0px 0px 20px rgba(58, 51, 21, 0.75);
+box-shadow:         0px 0px 20px rgba(58, 51, 21, 0.75);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border:1px solid #f2f2f2;
+	padding: 20px; 
 }
-#slide2{
-	
+#container-contenido{
+	margin-top: 50px;
 }
-#slide3{
-	background-color: lightgrey;
+/* Custom container */
+.container {
+margin: 0 auto;
+max-width:1000px;
 }
-#slide4{
-	background-color: yellow;
+.container > hr {
+margin: 30px 0;
+}
+
+/* my own menu */
+.navigation {
+	margin: 50px;
+	background: #fff;
+	width: 100%;
+	list-style-type: none;
+}
+ 
+/*
+  Asignamos los estilos necesarios para nuestro link.
+*/
+ 
+.navigation li a {
+	display:block;
+	color: #000000;
+	text-decoration: none;
+	padding: 10px 30px 10px 15px;
+}
+ 
+/*
+  Propiedades para cada ítem de nuestro menú.
+  En este punto es donde ponemos las transiciones que queremos, para cuando
+  pase de un estado a otro este sea animado.
+  transition: all 0.3s ease-in; - Con esta propiedad asignamos a que tipo de
+  propiedades les va afectar la animación, su duración y el tipo de efecto
+  que van a tener.
+  Debido a que cada browser posee su propio estandar, solo hay que agregar
+  el prefijo de cada uno de ellos, ejemplo:
+  -webkit-transition   -moz-transition   -o-transition
+*/
+ 
+.navigation li {
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+	width: 20%;
+	border-left: 5px solid #666;
+	float: left;
+	cursor: pointer;
+	padding: 0px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+ 
+/*
+  Damos estilo al titulo de nuestro link
+*/
+ 
+.navigation li h2 {
+	font-family: georgia;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 16px;
+}
+ 
+/*
+  Damos estilo a la descripción de nuestro link
+*/
+ 
+.navigation li p {
+	font-size: 11px;
+	color: #999;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+}
+ 
+/*
+  A partir de aqui, asignamos el "HOVER" a cada ítem de nuestra lista, este
+  es el que nos brindara el efecto en el momento que inicie la transición.
+*/
+ 
+.navigation li:hover {
+	background: #333;
+	border-left: 5px solid #000;
+}
+ 
+.navigation li:hover h2 {
+	font-weight: bold;
+	color: #fff;
+}
+ 
+.navigation li:hover p {
+	color: #ccc;
+	padding-left: 5px;
+}
+
+
+/* Customize the navbar links to be fill the entire space of the .navbar 
+.navbar .navbar-inner {
+	padding: 0;
+
+}
+.navbar .nav {
+	margin: 0;
+	display: table;
+	width: 100%;
+
+}
+
+.navbar .nav li {
+	display: table-cell;
+	width: 1%;
+	float: none;
+
+}
+.navbar .nav li a {
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+	width: 140px;
+	border-left: 5px solid #666;
+	cursor: pointer;
+	list-style-type: none;
+	padding: 10px 30px 10px 15px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	}
+.navbar .nav li:hover{
+	background-color: black;
+	}
+.navbar .nav .active a{
+	background: rgb(255, 255, 255) transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:    none;
+	box-shadow:         none;
+} 
+
+
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}*/
+.footer{
+
 }
